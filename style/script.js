@@ -130,7 +130,9 @@ document.addEventListener("touchend", () => {
 });
 
 document.addEventListener("touchmove", (e) => {
-  waitForUserInteraction();
+  if (audio.paused) {
+    waitForUserInteraction();
+  }
   const now = Date.now();
   if (!isDragging || now - lastMove < 30) return;
   lastMove = now;
@@ -155,5 +157,6 @@ function createSparkles(count = 40) {
     sparkleContainer.appendChild(s);
   }
 }
+
 
 createSparkles(40);
