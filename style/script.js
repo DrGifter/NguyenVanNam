@@ -5,7 +5,7 @@ const audio = document.getElementById("sound");
 const texts = [
   "Hoàng Thị Kim Hằng", 
   "Kỷ Niệm 1 Năm Yêu Nhau ❤️", 
-  "14 - 11 - 1997", 
+  "24 - 11 - 1997", 
   "06 - 09 - 2024", 
   "06 - 09 - 2025", 
   "Luôn cười thật tươi nhé 😊", 
@@ -160,3 +160,4 @@ function createSparkles(count = 40) {
 
 
 createSparkles(40);
+
